@@ -3,6 +3,7 @@ from PIL import Image
 image = Image.open("ccc.jpg")
 image = image.convert("L")
 
+# апрвавапвпв
 # L - чорно-білий
 # RGB 
 # RGBA 
