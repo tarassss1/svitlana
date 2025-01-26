@@ -12,18 +12,8 @@ class MyApp(ShowBase):
         self.cube.setScale(0.5)  # Масштаб куба
         self.cube.setPos(0, 10, 0)  # Початкова позиція куба
 
-        # Завантажуємо квадрат, який летить по осі X
-        self.square = self.loader.loadModel("models/box")  # Використовуємо такий же куб для квадрату
-        self.square.reparentTo(self.render)
-        self.square.setScale(0.3)  # Зменшуємо розмір квадрата
-        self.square.setColor(1, 0, 0, 1)  # Червоний колір
-        self.square.setPos(10, 10, 0)  # Початкова позиція квадрата
-
-        # Створюємо змінні для руху
         self.move_up = False
-        self.move_down = False
-        self.move_left = False
-        self.move_right = False
+
 
         # Обробка натискання клавіш
         self.accept("arrow_up", self.set_move_up, [True])
